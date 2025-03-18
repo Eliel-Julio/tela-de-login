@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tela de login</title>
+    <title>Tela de login</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/devices.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div class="container">
                 <h1>Login</h1>
-                <p>Bem vindo faça seu login</p>
+                <p>Bem-vindo. Faça seu login</p>
                 <form action="na.php" method="post">
                     <label for="IUser">User</label>
                     <input type="text" name="user" id="IUser" placeholder="Digite seu user">
                     <label for="IPassword">Password</label>
                     <input type="password" name="password" id="IPassword" placeholder="Digite sua senha">
+                    <input class="submit" type="submit" name="login" value="login" hidden>
+
+                    <p> Não tem uma conta? <a href="register.php">Cadastre-se</a> agora!</p>
                 </form>
+                <div class="social">
+                    <h2>Vsite nossas redes</h2>
+                    <a class="itens" href="https://www.facebook.com/" target="_blank"><img src="../img/logo-facebook.jpg" alt="facebook"></a>
+                    <a class="itens" href="https://www.instagram.com/" target="_blank"><img src="../img/logo-instagram.jpg" alt="instagram"></a>
+                    <a class="itens" href="https://www.twitter.com/" target="_blank"><img src="../img/logo-twitter.jpg" alt="twitter"></a>
+                    <a class="itens" href="https://github.com/Eliel-Julio" target="_blank"><img src="../img/logo-github.jpg" alt="twitter"></a>
+                </div>
             </div>
             <div class="img">
                 <!-- <img src="../img/pexels-steve-1292241.jpg" alt="imagem de login"> -->
